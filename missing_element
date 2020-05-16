@@ -1,0 +1,31 @@
+ package Write;
+ public class missing_element
+{
+	public static void method11(int array22[])//creating method11 
+	{
+		int a[]={1,2,4,5,6};//initialization of an array a[]
+		int sum;//declaration of an element
+		int length_array=5;//length of an array
+		sum=(length_array+1)*(length_array+2)/2;//Total sum......
+		int count=0;
+		int i,sum_missing_element;
+		for(i=0;i<a.length;i++)
+		{
+			count=count+a[i];//Taking sum of all the lements of an array
+		}
+		if(sum==count)//comparison
+		{
+			System.out.println("Element is not missing in this array");
+		}
+		else
+		{
+			sum_missing_element=sum-count;
+			System.out.println("Missing element in the array a[] is"+" "+sum_missing_element);
+		}
+	}//closing of method22
+	public static void main(String args[])//Main method
+	{
+		int q[]={1,2,4,5,6};//Declaration of an array a[];
+		method11(q);//Calling method
+	}
+}
